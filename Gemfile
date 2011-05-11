@@ -1,14 +1,14 @@
 source :rubygems
 
-gem 'decent_exposure', '1.0.0'
+gem 'decent_exposure', '1.0.1'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'gravtastic', '3.1.0'
-gem 'haml-rails', '0.3.4'
+gem 'haml', '3.1.1'
+gem 'sass', '3.1.1'
 gem 'heroku', '1.17.11'
 gem 'omniauth', '0.2.0.beta4'
-# gem 'oa-oauth', :require => 'omniauth/oauth'
 gem 'pg', '0.10.1'
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.7'
 gem 'fabrication', '0.9.5'
 gem 'ffaker', '1.0.0'
 
@@ -21,10 +21,11 @@ group :development, :test do
 end
 
 group :test do
+  gem 'database_cleaner', '0.6.7'
   gem 'shoulda', '2.11.3'
 end
 
 group :cucumber, :test do
   gem 'capybara', '0.4.0'
-  gem 'cucumber-rails', '0.3.2'
+  gem 'cucumber-rails', '0.4.1'
 end
