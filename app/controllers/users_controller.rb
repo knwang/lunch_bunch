@@ -9,4 +9,5 @@ class UsersController < ApplicationController
     Outing.last.users << current_user
   end
 
+  # fixes a bug!
 end
